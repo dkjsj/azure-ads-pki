@@ -1,0 +1,51 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "existingVNETName": {
+      "value": "adVNET"
+    },
+    "existingSubnetName": {
+      "value": "adSubnet"
+    },
+    "vmSize": {
+      "value": "Standard_DS2_v2"
+    },
+    "domainToJoin": {
+      "value": "domain.local"
+    },
+    "domainUsername": {
+      "value": "adadmin"
+    },
+    "domainPassword": {
+      "value": "PleaseChangeMe"
+    },
+    "domainJoinOptions": {
+      "value": 3
+    },
+    "vmAdminUsername": {
+      "value": "vmadmin"
+    },
+    "vmAdminPassword": {
+      "value": "PleaseChangeMe"
+    },
+    "dnsLabelPrefix": {
+      "value": "pki"
+    },
+    "adminUsername": {
+      "value": "adadmin"
+    },
+    "adminPassword": {
+      "value": "PleaseChangeMe"
+    },
+    "dnsPrefix": {
+      "value": "prefix"
+    },
+    "domainName": {
+      "value": "domain.local"
+    },
+    "_artifactsLocation": {
+      "value": "https://raw.githubusercontent.com/dkjsj/azure-ads-pki/master"
+    }
+  }
+}
